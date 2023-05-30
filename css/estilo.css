@@ -1,0 +1,619 @@
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url(..css/font/websymbols-regular-webfont.eot);
+    src: url(../css/font/websymbols-regular-webfont.eot?#iefix) format('embedded-opentype'),
+        url(../css/font/websymbols-regular-webfont.woff) format('woff'),
+        url(../css/font/websymbols-regular-webfont.ttf) format('truetype'),
+        url(../css/font/websymbols-regular-webfont.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lobster', cursive;
+    color: blanchedalmond;
+    font-weight: 100;
+}
+
+body {
+    background-image: url(../img/background.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*------------------------ENCABEZADO------------------------------ */
+.encabezado {
+    position: fixed;
+    width: 99.8%;
+    height: 120px;
+    float: left;
+    background-image: url(../img/background_encabezado.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    box-shadow: 1px 3px 10px black;
+    overflow: hidden;
+}
+
+.encabezado_logo {
+    float: left;
+    width: 9%;
+    height: 100%;
+    margin-left: 152px;
+}
+
+.encabezado_logo img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.encabezado_buscador {
+    float: left;
+    width: 50%;
+    height: 50%;
+    text-align: left;
+
+}
+
+.encabezado_buscador_text {
+    width: 250px;
+    height: 20px;
+    font-size: 17px;
+    margin: 10px -3px 10px 10px;
+    color: black;
+}
+
+.encabezado_buscador_button {
+    font-family: "WebSymbolsRegular";
+    width: 70px;
+    height: 50%;
+    font-size: 17px;
+    color: black;
+    cursor: pointer;
+}
+
+.encabezado_nav {
+    float: left;
+    height: 50%;
+    width: 50%;
+
+}
+
+.encabezado_nav_items {
+    width: 100%;
+    height: 50px;
+    float: left;
+    list-style: none;
+    padding: 5px;
+}
+
+.encabezado_nav_items_boton {
+    display: block;
+    float: left;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+.encabezado_nav_items_boton:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+.encabezado_redes {
+    float: right;
+    position: relative;
+    width: 31%;
+    height: 50%;
+}
+
+.encabezado_redes_icon {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 2px 3px 0px 20px;
+
+}
+
+.encabezado_redes_icon:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+/*------------------------ MAIN ------------------------------ */
+.main {
+    width: 100%;
+    min-height: calc(100vh - 123px - 103px);
+    padding-top: 120px;
+}
+
+.main .banner {
+    margin: 20px 65px 0px 65px;
+    width: 90%;
+}
+
+.main .banner img {
+    width: 100%;
+    height: 200px;
+
+}
+
+.main .titulo {
+    padding-top: 40px;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    height: 60px;
+    text-shadow: 3px 7px 15px black;
+    font-weight: 100;
+}
+
+/*------------------------ PRDUCTOS ------------------------------ */
+
+.productos_destacados {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    width: 91%;
+    margin: 10px 70px 10px 70px;
+}
+
+.productos_destacados_item {
+    display: block;
+    float: left;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px black;
+    overflow: hidden;
+    width: 22%;
+    height: 250px;
+    margin: 20px 17px 20px 17px;
+}
+
+.productos_destacados_item_imagen {
+    display: block;
+    border: 1px solid black;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+}
+
+.productos_destacados_item_texto {
+    display: block;
+    background: url(../img/background.png);
+    text-align: center;
+    font-size: 18px;
+    height: 53px;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+/*------------------------ SERVICIOS ------------------------------ */
+.servicios_section {
+    float: left;
+    width: 100%;
+    height: 400px;
+}
+
+.servicios_section_descripcion {
+    display: block;
+    float: left;
+    width: 45%;
+    height: 400px;
+    padding-top: 30px;
+    margin: 0px 24px 0px 70px;
+}
+
+.main h2 {
+    font-size: 40px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    text-shadow: 3px 7px 15px black;
+}
+
+.servicios_section_descripcion p {
+    padding-right: 40px;
+    text-align: justify;
+}
+
+.servicios_section_video {
+    display: block;
+    float: left;
+    width: 41%;
+    height: 400px;
+    padding-top: 30px;
+    margin: 0px 70px 0px 24px;
+}
+
+.servicios_section_video iframe {
+    float: left;
+    margin-top: 40px;
+    box-shadow: 0px 10px 20px black;
+}
+
+/*------------------------ NOSOTROS ------------------------------ */
+.nosotros_sobre {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 97%;
+    height: 370px;
+    margin: 40px 30px;
+}
+
+.main h3 {
+    font-size: 40px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-shadow: 3px 7px 15px black;
+}
+
+.main hr {
+    margin-top: 80px;
+    border: none;
+    border-top: 2px solid;
+}
+
+.nosotros_sobre p {
+    text-align: justify;
+    float: left;
+    width: 500px;
+    margin: 40px 50px 7px 100px;
+}
+
+.nosotros_sobre_imagen {
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin: 40px 100px 7px 50px;
+}
+
+.nosotros_sobre_imagen img {
+    width: 500px;
+    height: 250px;
+    box-shadow: 0px 10px 20px black;
+}
+
+.nosotros_donde_estamos {
+    display: block;
+    width: 97%;
+    height: 450px;
+    margin: 40px 30px;
+
+}
+
+.nosotros_donde_estamos P {
+    text-align: justify;
+    width: 500px;
+    margin: 40px 50px 7px 100px;
+    font-size: 23px;
+}
+
+.nosotros_donde_estamos iframe {
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0px 10px 20px black;
+}
+
+.nosotros_donde_estamos p {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/*------------------------ PREGUNTAS FRECUENTES------------------------------ */
+
+.preguntas_frecuentes_titulo {
+    font-weight: bold;
+    margin: 20px auto;
+    margin-left: 70px;
+
+}
+
+.preguntas_frecuentes {
+    width: 90%;
+    padding: 10px 67px;
+}
+
+.preguntas_frecuentes ul {
+    width: 80%;
+    margin: 0px 5px;
+}
+
+.preguntas_frecuentes h4 {
+    font-weight: bold;
+}
+
+.preguntas_frecuentes_respuesta {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.preguntas_frecuentes_pregunta {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+/*------------------------ CONTACTO ------------------------------ */
+.contacto {
+    width: 90%;
+    margin: 10px 5%;
+}
+
+.contacto_formulario {
+    display: block;
+    margin: 0px auto;
+    width: 50%;
+    padding-left: 105px;
+}
+
+.contacto_formulario div {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.contacto_formulario label {
+    display: block;
+    font-size: 23px;
+}
+
+.contacto_formulario input {
+    width: 80%;
+    height: 20px;
+    color: black;
+}
+
+.contacto_formulario [type="radio"] {
+    width: 10%;
+}
+
+.contacto_formulario [for="gender"] {
+    display: inline;
+}
+
+#checkbox label {
+    display: block;
+    float: left;
+}
+
+#checkbox input {
+    display: block;
+    float: left;
+    width: 5%;
+    height: 20px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.contacto_formulario textarea {
+    width: 80%;
+    height: 90px;
+    color: black;
+}
+
+.contacto_formulario [type="submit"] {
+    color: black;
+    height: 30px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+/*------------------------ FOOTER------------------------------ */
+.footer {
+    display: block;
+    float: left;
+    border: 1px solid black;
+    box-shadow: 1px -3px 5px black;
+    width: 99.8%;
+    height: 44px;
+    background-image: url(../img/background_encabezado.png);
+    margin-top: 60px;
+}
+
+.footer_contacto {
+    padding: 10px;
+    width: 5%;
+}
+
+.footer_contacto a {
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: left;
+}
+
+
+.footer_autor {
+    float: right;
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    bottom: 43px;
+
+}
+
+.footer_autor p {
+    text-align: right;
+    font-size: 17px;
+}
+
+/*------------------------ ANIMACION------------------------------ */
+@keyframes circleAnimation {
+    0% {
+        background-color: #ff0000;
+        transform: scale(1);
+    }
+
+    50% {
+        background-color: #00ff00;
+        transform: scale(1.5);
+    }
+
+    100% {
+        background-color: #0000ff;
+        transform: scale(1);
+    }
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    animation: circleAnimation 2s ease-in-out infinite;
+}
+
+/*------------------------ MEDIA QUERIES ------------------------------ */
+/* Móvil*/
+@media only screen and (max-width: 767px) {
+
+    /* Encabezado */
+    .encabezado_logo {
+        text-align: center;
+    }
+
+    .encabezado_buscador {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .encabezado_nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .encabezado_nav_items {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .encabezado_nav_items li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .encabezado_redes {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Body */
+    .main h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .contacto_formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto_formulario div {
+        margin-bottom: 10px;
+    }
+
+    .contacto_formulario label {
+        display: block;
+        font-weight: bold;
+    }
+
+    .contacto_formulario input,
+    .contacto_formulario textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .contacto_formulario input[type="submit"] {
+        width: auto;
+        margin-top: 10px;
+    }
+}
+
+/* Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Encabezado */
+    .encabezado_logo {
+        text-align: center;
+    }
+
+    .encabezado_buscador {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .encabezado_nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .encabezado_nav_items {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .encabezado_nav_items li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .encabezado_redes {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Body */
+    .main h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .contacto_formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto_formulario div {
+        margin-bottom: 10px;
+    }
+
+    .contacto_formulario label {
+        display: block;
+        font-weight: bold;
+    }
+
+    .contacto_formulario input,
+    .contacto_formulario textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .contacto_formulario input[type="submit"] {
+        width: auto;
+        margin-top: 10px;
+    }
+}
