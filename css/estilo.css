@@ -111,10 +111,8 @@ body {
 
 
 .encabezado_redes {
-    float: right;
-    position: relative;
-    width: 31%;
-    height: 50%;
+    display: flex;
+    justify-content: right;
 }
 
 .encabezado_redes_icon {
